@@ -34,8 +34,8 @@ pipeline{
     stage('deploy spring boot app on k8s') {
         steps {
         script {
-            sh '''kubectl apply -f springboot-deployment.yml 
-                  kubectl apply -f springboot-service.yml
+            sh '''kubectl apply -f ecr-springboot-deployment.yml 
+                  kubectl apply -f ecr-springboot-service.yml
                   kubectl get all
                 '''
         }

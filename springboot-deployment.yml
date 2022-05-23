@@ -16,8 +16,7 @@ spec:
     spec:
       containers:
       - name: java-app
-        image: devopsweekendsessionmay08.azurecr.io/devops-weekend-session:3
+        image: devopsweekendsessionmay23.azurecr.io/devopsweekendsessionmay23:1
         ports:
         - containerPort: 33333
-      imagePullSecrets:
-      - name: regcred
+      

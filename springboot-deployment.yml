@@ -19,4 +19,6 @@ spec:
         image: devopsweekendsessionmay23.azurecr.io/devopsweekendsessionmay23:1
         ports:
         - containerPort: 33333
+      imagePullSecrets:
+      - name: regcred  
       
